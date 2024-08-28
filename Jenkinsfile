@@ -30,7 +30,8 @@ node {
                 // 변경 사항을  commit
                 sh "git commit -m 'Done by Jenkins Job changemanifest: ${env.BUILD_NUMBER}'"
                 
-                //변경 사항을 kubernetesmanifest repo에 push
+                // 변경 사항을 kubernetesmanifest repo에 push
+                // kubernetesmanifest용 git repository 이름이 study-kubernetesmanifest_repo이 아닐 경우 하기 코드에서 수정
                 sh 'git push https://${GIT_USERNAME}:${GIT_PASSWORD}@github.com/${GIT_USERNAME}/study-kubernetesmanifest_repo.git HEAD:main'
             }                
         }
