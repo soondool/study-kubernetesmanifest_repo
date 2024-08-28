@@ -15,7 +15,7 @@ spec:
         app: test-web
     spec:
       containers:
-      - image: 234311324580.dkr.ecr.ap-northeast-2.amazonaws.com/ecr:6
+      - image: 234311324580.dkr.ecr.ap-northeast-2.amazonaws.com/ecr:8
         name: test-web
 ---
 apiVersion: v1
